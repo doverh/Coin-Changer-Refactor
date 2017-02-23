@@ -4,10 +4,12 @@ def coin_changer(amount)
 	change = Hash.new
 
   coin.each do |key, value|
-    change[key] = 0 
-    if amount >= value
+  change[key] = 0 
+   while amount >= value
+    	puts amount 
     	amount -= value
     	amount = (amount*100).round / 100.0
+    	puts amount
     	change[key] += 1
     end
    end
