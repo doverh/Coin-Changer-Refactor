@@ -6,7 +6,7 @@ def coin_changer(amount)
 		change
 	end
 
-	if amount > 0
+	if amount > 0 
 		change[:penny]= amount * 100 #Converts value to integer
 	end
 	return change
