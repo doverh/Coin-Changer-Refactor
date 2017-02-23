@@ -4,6 +4,12 @@ def coin_changer(amount)
 
 	while amount > 0
 
+
+		if amount >0.24
+			change[:quarter] = 1
+			amount-= 0.25
+		end
+
 		if amount >0.19
 			change[:dime] = 2
 			amount-= 0.20
