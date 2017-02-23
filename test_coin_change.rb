@@ -24,4 +24,10 @@ class TestCoinChange < Minitest::Test
 		assert_equal({:nickel=>1, :penny=>1},coin_changer(0.06))
 	end
 
+	def test_insert_10_return_dimme_1
+		assert_equal({:dime=>1},coin_changer(0.10))
+	end
+
+
+
 end
