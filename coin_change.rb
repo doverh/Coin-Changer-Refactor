@@ -6,13 +6,13 @@ def coin_changer(amount)
 		change[:dime] = 1
 		amount-= 0.10
 	end
-
-	if amount >= 0.05 and amount < 0.10 
+	
+	if amount > 0.04 and amount < 0.10 
 		change[:nickel] = 1
 		amount -= 0.05
 	end
 		
-	if amount > 0 and amount < 0.05
+	if amount > 0 and amount <= 0.04
 		change[:penny]= (amount * 100).round #Converts value to integer
 	end
 
