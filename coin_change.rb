@@ -7,9 +7,7 @@ def coin_changer(amount)
     change[key] = 0 
     if amount >= value
     	amount -= value
-    	puts amount 
     	amount = (amount*100).round / 100.0
-    	puts amount
     	change[key] += 1
     end
    end
